@@ -1,0 +1,108 @@
+@import url("./css/fonts.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 5px 1fr;
+  grid-template-columns: 1fr 5px 1fr;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.gutter-col {
+  grid-row: 1/-1;
+  cursor: col-resize;
+}
+
+.gutter-col-1 {
+  grid-column: 2;
+}
+
+.gutter-row {
+  grid-column: 1/-1;
+  cursor: row-resize;
+}
+
+.gutter-row-1 {
+  grid-row: 2;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  resize: none;
+
+  background-color: #333;
+  color: #fff;
+
+  font-family: monospace;
+
+  padding: 1rem;
+
+  background-repeat: no-repeat;
+  background-size: 36px;
+
+  background-position: bottom 10px right 10px;
+}
+
+#html {
+  background-image: url(./assets/html5.svg);
+}
+
+#js {
+  background-image: url(./assets/js.svg);
+}
+
+#css {
+  background-image: url(./assets/css3.svg);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #ffffff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}

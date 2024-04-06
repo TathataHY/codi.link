@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>codi.link | HTML, CSS, JavaScript Live Editor Playground</title>
+    <meta
+      name="description"
+      content="codi.link is a live editor for HTML, CSS and JS. Edit your code in real-time, and see the result instantly"
+    />
+    <meta charset="UTF-8" />
+    <link rel="icon" type=image/x-icon href="/assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      as="font"
+      rel="preload"
+      crossorigin="anonymous"
+      href="/assets/fonts/CascadiaCodePL.woff2"
+    />
+    <link
+      as="font"
+      rel="preload"
+      crossorigin="anonymous"
+      href="/assets/fonts/CascadiaCodePLItalic.woff2"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="grid">
+      <div>
+        <textarea id="html"></textarea>
+      </div>
+      <div class="gutter-col gutter-col-1"></div>
+      <div>
+        <textarea id="js"></textarea>
+      </div>
+      <div>
+        <textarea id="css"></textarea>
+      </div>
+      <div class="gutter-row gutter-row-1"></div>
+      <div>
+        <iframe title="codi.link"></iframe>
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
